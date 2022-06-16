@@ -30,9 +30,9 @@ metadata:
   labels:
     app: flask-service
 spec:
-  type: Nodeport
+  type: LoadBalancer
   ports:
-  - port: 30008
+  - port: 80
     targetPort: 5000
   selector:
     app: flaskdemo
