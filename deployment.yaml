@@ -32,7 +32,7 @@ metadata:
 spec:
   type: Nodeport
   ports:
-  - port: 80
-    targetPort: 30005
+  - port: 30008
+    targetPort: 5000
   selector:
     app: flaskdemo
